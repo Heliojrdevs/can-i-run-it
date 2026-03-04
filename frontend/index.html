@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can I Run It?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Can I Run It?</h1>
+    
+    <div class="input-group">
+        <label>Seu Processador</label>
+        <input list="lista-cpus" id="cpu_user" placeholder="Pesquise sua CPU...">
+        <datalist id="lista-cpus"></datalist>
+    </div>
+
+    <div class="input-group">
+        <label>Sua Placa de Vídeo</label>
+        <input list="lista-gpus" id="gpu_user" placeholder="Pesquise sua GPU...">
+        <datalist id="lista-gpus"></datalist>
+    </div>
+
+    <div class="input-group">
+        <label>Pesquisar Jogo na Steam</label>
+        <input list="lista-jogos" id="jogo_search" placeholder="Ex: Resident Evil..." oninput="pesquisarJogo(this.value)">
+        <datalist id="lista-jogos"></datalist>
+        <input type="hidden" id="app_id">
+    </div>
+
+    <button onclick="verificar()">Analisar Sistema</button>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

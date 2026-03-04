@@ -1,0 +1,111 @@
+:root {
+    --bg: #0a0b10;
+    --card: #161822;
+    --neon-blue: #00f2ff;
+    --neon-pink: #ff00ff;
+    --neon-green: #39ff14;
+    --neon-yellow: #ffcc00;
+    --neon-red: #ff3131;
+}
+
+body {
+    background: var(--bg);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: var(--card);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: linear-gradient(to right, var(--neon-blue), var(--neon-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #aaa;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    background: #000;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: white;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--neon-blue);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: 2px solid var(--neon-pink);
+    color: var(--neon-pink);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--neon-pink);
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+}
+
+#result {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: none;
+    line-height: 1.6;
+}
+
+.status-roda {
+    border: 2px solid var(--neon-green);
+    color: var(--neon-green);
+    box-shadow: inset 0 0 10px rgba(57, 255, 20, 0.2);
+}
+
+.status-sofrendo {
+    border: 2px solid var(--neon-yellow);
+    color: var(--neon-yellow);
+    box-shadow: inset 0 0 10px rgba(255, 204, 0, 0.2);
+}
+
+.status-nao-roda {
+    border: 2px solid var(--neon-red);
+    color: var(--neon-red);
+    box-shadow: inset 0 0 10px rgba(255, 49, 49, 0.2);
+}
