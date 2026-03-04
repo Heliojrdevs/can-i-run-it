@@ -1,5 +1,7 @@
 # 🎮 Can I Run It? - API & Dashboard
 
+![Demonstração do Can I Run It](assets/print_re4.png)
+
 Uma aplicação Full-Stack modular que compara o hardware do utilizador (CPU e GPU) com os requisitos mínimos oficiais dos jogos na Steam, informando se o jogo roda liso, sofre ou não roda.
 
 ## 🚀 Tecnologias Utilizadas
